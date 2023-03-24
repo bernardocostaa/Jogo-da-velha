@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img alt="" src="https://raw.githubusercontent.com/bernardocostaa/AutoCar/main/templete2.jpg" width="100%">
+  <img alt="" src="https://raw.githubusercontent.com/bernardocostaa/Jogo-da-velha/main/post.jpg" width="100%">
 </p>
 
 <p align="center">
