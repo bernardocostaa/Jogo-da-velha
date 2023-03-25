@@ -4,6 +4,7 @@ const btnReset = document.getElementById('reset')
 const vez = document.getElementById('qualJogador')
 
 let isX = false
+let jogador = ''
 
 reset()
 function randomGame(){
@@ -12,13 +13,14 @@ function randomGame(){
   area.classList.remove('circulo')
   if(random === 0){
     isX = true
-    console.log('1');
+    jogador = 'X'
     area.classList.add('x')
   }else{
     isX = false
+    jogador = 'O'
     area.classList.add('circulo')
-    console.log('2');
   }
+  rederInfo()
 }
 
 function reset(){
@@ -49,14 +51,17 @@ function trocaTurno(){
   area.classList.remove('x')
   
   if(isX){
+    jogador = 'X'
     area.classList.add('x')
   }else{
+    jogador = 'O'
     area.classList.add('circulo')
   }
+  rederInfo()
 }
 
 function rederInfo(){
-  
+  vez.innerText = jogador
 }
 
 quadroGame.forEach((item)=>{
