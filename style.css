@@ -24,6 +24,7 @@ body{
   border-radius: 50px;
   width: 800px;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+  margin: 0 20px;
 }
 
 .area-game h1{
@@ -152,4 +153,15 @@ body{
 .area.x .celula:not(.x):not(.circulo):hover::after,
 .area.x .celula:not(.x):not(.circulo):hover::before{
  opacity: .5;
+}
+
+@media(max-width:480px){
+  .info-game{
+    flex-direction: column;
+    align-items: center;
+  }
+  .celula{
+    width: 80px;
+    height: 80px;
+  }
 }
