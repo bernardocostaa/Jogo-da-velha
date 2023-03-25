@@ -1,6 +1,7 @@
 const quadroGame = document.querySelectorAll('[data-quadro]')
 const area = document.querySelector('.area')
 const btnReset = document.getElementById('reset')
+const vez = document.getElementById('qualJogador')
 
 let isX = false
 
@@ -52,6 +53,10 @@ function trocaTurno(){
   }else{
     area.classList.add('circulo')
   }
+}
+
+function rederInfo(){
+  
 }
 
 quadroGame.forEach((item)=>{

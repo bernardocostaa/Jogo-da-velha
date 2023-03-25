@@ -159,9 +159,24 @@ body{
   .info-game{
     flex-direction: column;
     align-items: center;
+    gap: 8px;
+  }
+  .area-game{
+    padding: 18px;
+  }
+  .area{
+    margin: 25px 0;
   }
   .celula{
     width: 80px;
     height: 80px;
+  }
+  .celula.x::after,.celula.x::before{
+    width: 60px;
+  }
+  .celula.circulo::after,
+  .celula.circulo::before{
+    width: 40px;
+    height: 40px;
   }
 }
