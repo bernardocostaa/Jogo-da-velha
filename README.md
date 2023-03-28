@@ -29,7 +29,7 @@ Link do Projeto: [Jogo da Velha](https://bernardocostaa.github.io/Jogo-da-velha/
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/bernardocostaa/AutoCar/blob/main/LICENSE) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/bernardocostaa/Jogo-da-velha/blob/main/LICENSE) para mais detalhes.
 
 ---
 
