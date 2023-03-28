@@ -56,12 +56,12 @@ function eventoClique(e) {
   marcarTela(quadro, addClassTela);
 
   const ganhou = checkWin(addClassTela);
-  const empate = checkEmpate()
+  const empate = checkEmpate();
   if (ganhou) {
-    fimDeJogo(false)
-  }else if(empate){
-    fimDeJogo(true)
-  }else{
+    fimDeJogo(false);
+  } else if (empate) {
+    fimDeJogo(true);
+  } else {
     trocaTurno();
   }
 }
@@ -92,20 +92,20 @@ function checkWin(jogadorNoMomento) {
     });
   });
 }
-function checkEmpate(){
-  return [...quadroGame].every((item)=>{
-   return item.classList.contains('x') ||  item.classList.contains('circulo')
-  })
+function checkEmpate() {
+  return [...quadroGame].every((item) => {
+    return item.classList.contains("x") || item.classList.contains("circulo");
+  });
 }
 
-function fimDeJogo(empate) {
-  const finalMsg = document.querySelector('.finalMsg')
-  if (empate) {
-    finalMsg.innerText = 'Empate!';
-  }else{
-    finalMsg.innerText = isX ? 'X venceu!' : 'O venceu!'
+function fimDeJogo(statusGame) {
+  const finalMsg = document.querySelector(".finalMsg");
+  if (statusGame) {
+    finalMsg.innerText = "Empate!";
+  } else {
+    finalMsg.innerText = isX ? "X venceu!" : "O venceu!";
   }
-  modal.classList.add('ativo')
+  modal.classList.add("ativo");
 }
 
 quadroGame.forEach((item) => {
