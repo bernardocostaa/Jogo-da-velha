@@ -180,3 +180,36 @@ body{
     height: 40px;
   }
 }
+
+.modal-cont{
+  height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.modal-cont.ativo{
+  display: flex;
+}
+
+.modal{
+  background: #222222;
+  padding: 20px;
+  width: 250px;
+  display: flex;
+  height: 200px;
+  border-radius: 8px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+}
+.modal h2{
+  color: white;
+  margin-bottom: 12px;
+}
